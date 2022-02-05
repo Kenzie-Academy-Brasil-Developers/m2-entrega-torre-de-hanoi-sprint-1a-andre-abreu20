@@ -9,6 +9,7 @@ const disk4 = document.createElement("div")
 const pWinner = document.createElement("p")
 const resetButton = document.createElement("button")
 
+
 body.appendChild(resetButton)
 body.appendChild(torre1)
 body.appendChild(torre2)
@@ -29,6 +30,7 @@ disk2.classList.add("disk2")
 disk3.classList.add("disk3")
 disk4.classList.add("disk4")
 
+
 resetButton.innerHTML = "Reset"
 
 
@@ -41,8 +43,7 @@ Fazer uma funcao com um evento de 2 clicks para que a coluna adote o disco porem
 function moveDisk(torreAtual, torreAlvo) {
     let lastDisk = torreAtual.lastElementChild
     let targetDiskSize
-
-    if (countChild(torreAlvo) === 0 && lastDisk) {
+    if (checkChild(torreAlvo) === 0 && lastDisk) {
         torreAlvo.appendChild(lastDisk)
     }
     if (lastDisk) {
@@ -55,8 +56,7 @@ function moveDisk(torreAtual, torreAlvo) {
 }
 
 let arrclicks = []
-let counter = 1
-function countChild(torreAlvo) {
+function checkChild(torreAlvo) {
     let child = torreAlvo.childElementCount
     return child
 }
@@ -69,7 +69,7 @@ function highlight(element) {
                 if (element) {
                     element.style.border = orig
                 }
-            }, 400)
+            }, 100)
         }
     }
 }
@@ -106,8 +106,8 @@ torre2.addEventListener("click", () => {
 torre3.addEventListener("click", () => {
     let LastChildTorre3 = torre3.lastElementChild
     let childsCount = torre3.childElementCount
-    arrclicks.push(torre3)
     highlight(LastChildTorre3)
+    arrclicks.push(torre3)
     if (arrclicks.length === 2) {
         moveDisk(arrclicks[0], arrclicks[1])
         arrclicks.length = 0
@@ -123,6 +123,7 @@ torre3.addEventListener("click", () => {
         return false
     }
 })
+
 
 
 
