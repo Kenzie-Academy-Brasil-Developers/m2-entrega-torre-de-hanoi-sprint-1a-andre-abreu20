@@ -1,0 +1,110 @@
+
+body{
+   margin-top: -17px;
+   background-image: url("jGlzr.png");
+   max-height: 0px;
+}
+.torre1 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 80px;
+    height: 500px;
+    background-color: rgb(144, 78, 3);
+    position: relative;
+    border-radius: 10px;
+    left: 300px;
+    top: 276px;
+}
+.torre1:hover {
+    background-color: rgb(255, 166, 0);
+    cursor: pointer;
+}
+.torre2 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 80px;
+    height: 500px;
+    background-color: rgb(144, 78, 3);
+    position: relative;
+    border-radius: 10px;
+    left: 700px;
+    top: -224px;
+}
+.torre2:hover {
+    background-color: rgb(255, 166, 0);
+    cursor: pointer;
+}
+.torre3 {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 80px;
+    height: 500px;
+    background-color: rgb(144, 78, 3);
+    position: relative;
+    border-radius: 10px;
+    left: 1100px;
+    top: -724px;
+}
+.torre3:hover {
+    background-color: rgb(255, 166, 0);
+    cursor: pointer;
+}
+.disk1 {
+    width: 430px;
+    height: 90px;
+    border-radius: 45px;
+    border: solid 4px rgb(0, 0, 0);
+    background-color: rgb(255, 56, 56);
+}
+.disk2 {
+    width: 330px;
+    height: 90px;
+    border-radius: 45px;
+    border: solid 4px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 10);
+}
+.disk3 {
+    width: 230px;
+    height: 90px;
+    border-radius: 45px;
+    border: solid 4px rgb(0, 0, 0);
+    background-color: rgb(20, 177, 20);
+}
+.disk4 {
+    width: 130px;
+    height: 90px;
+    border-radius: 45px;
+    border: solid 4px rgb(0, 0, 0);
+    background-color: rgb(1, 67, 190);
+}
+.winner {
+    width: 300px;
+    height: 40px;
+    position: relative;
+    left: 590px;
+    top: -1500px;
+    display: none;
+    background-color: greenyellow;
+}
+.button {
+    background-color: black;
+    width: 100px;
+    height: 25px;
+    position: relative;
+    left: 50px;
+    top: 40px;
+    color: white;
+    font-size: 17px;
+}
+.counter {
+    background-color: blue;
+    width: 100px;
+    height: 25px;
+    position: relative;
+    top: -1450px;
+    left: 50px;
+    font-size: 25px;
+}
